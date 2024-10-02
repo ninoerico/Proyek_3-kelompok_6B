@@ -15,9 +15,11 @@
         >
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
                 <div class="flex items-center justify-between">
+                    
                     <div
                         class="flex items-center justify-start rtl:justify-end"
                     >
+                        
                         <button
                             data-drawer-target="logo-sidebar"
                             data-drawer-toggle="logo-sidebar"
@@ -82,13 +84,13 @@
                                         class="text-sm text-gray-900 dark:text-white"
                                         role="none"
                                     >
-                                        Neil Sims
+                                        Bandyaga Adiansyah
                                     </p>
                                     <p
                                         class="truncate text-sm font-medium text-gray-900 dark:text-gray-300"
                                         role="none"
                                     >
-                                        neil.sims@flowbite.com
+                                        bandyagaadiansyah@gmail.com
                                     </p>
                                 </div>
                                 <ul class="py-1" role="none">
@@ -98,7 +100,7 @@
                                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                             role="menuitem"
                                         >
-                                            Dashboard
+                                            Lihat Aktivitas
                                         </a>
                                     </li>
                                     <li>
@@ -107,16 +109,7 @@
                                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                             role="menuitem"
                                         >
-                                            Settings
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            role="menuitem"
-                                        >
-                                            Earnings
+                                            Kelola Akun
                                         </a>
                                     </li>
                                     <li>
@@ -209,7 +202,7 @@
                             <span
                                 class="ms-3 flex-1 whitespace-nowrap text-left rtl:text-right"
                             >
-                                E-commerce
+                                Kegiatan
                             </span>
                             <svg
                                 class="h-3 w-3"
@@ -233,7 +226,7 @@
                                     href="#"
                                     class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                                 >
-                                    Products
+                                    List Kegiatan
                                 </a>
                             </li>
                             <li>
@@ -241,7 +234,7 @@
                                     href="#"
                                     class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                                 >
-                                    Billing
+                                    Buat Kegiatan
                                 </a>
                             </li>
                             <li>
@@ -249,7 +242,7 @@
                                     href="#"
                                     class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                                 >
-                                    Invoice
+                                    Evaluasi Kegiatan
                                 </a>
                             </li>
                         </ul>
