@@ -22,7 +22,9 @@ Route::get('/admin/adminDashboard', function () {
 })->middleware('auth'); // Pastikan hanya admin yang bisa mengakses
 
 
-
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
 // Route::get('/adminDashboard', function () {
 //     return view('admin.adminDashboard');
 // });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace("_", "-", app()->getLocale()) }}">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,7 +7,6 @@
             Sikahim | Sistem Pengelolaan Kegiatan Masjid Lukmanul Hakim
         </title>
         @vite("resources/css/app.css")
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     </head>
     <body>
         <nav
@@ -43,13 +42,13 @@
                             </svg>
                         </button>
                         <a
-                            href="https://flowbite.com"
+                            href="#"
                             class="ms-2 flex md:me-24"
                         >
                             <img
-                                src="https://flowbite.com/docs/images/logo.svg"
+                                src="img/logo.png"
                                 class="me-3 h-8"
-                                alt="FlowBite Logo"
+                                alt="Sikahim Logo"
                             />
                             <span
                                 class="self-center whitespace-nowrap text-xl font-semibold sm:text-2xl dark:text-white"
@@ -84,13 +83,13 @@
                                         class="text-sm text-gray-900 dark:text-white"
                                         role="none"
                                     >
-                                        Bandyaga Adiansyah
+                                        User
                                     </p>
                                     <p
                                         class="truncate text-sm font-medium text-gray-900 dark:text-gray-300"
                                         role="none"
                                     >
-                                        bandyagaadiansyah@gmail.com
+                                        Email User
                                     </p>
                                 </div>
                                 <ul class="py-1" role="none">
@@ -275,5 +274,84 @@
                 </ul>
             </div>
         </aside>
+        
+        <div class="ml-64 flex-1 p-8 mt-10">
+            <!-- Container Form dan Foto Profil -->
+            <div class="bg-white p-6 rounded-lg shadow grid grid-cols-3 gap-4">
+                <!-- Form Kelola Akun -->
+                <div class="col-span-2">
+                    <h2 class="text-center text-xl font-bold mb-4">Kelola Akun</h2>
+        
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
+                                <input type="text" value="Khalisa Azilia" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Tanggal Lahir</label>
+                                <input type="date" value="2004-04-01" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Email Pengguna</label>
+                                <input type="email" value="khalisazilia@gmail.com" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Jenis Kelamin</label>
+                                <input type="text" value="Perempuan" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Username</label>
+                                <input type="text" value="khansazilia14" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">NIM</label>
+                                <input type="text" value="231501611" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+        
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Nomor Telepon</label>
+                                <input type="text" value="0815215785881" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                        </div>
+        
+                        <div class="flex justify-end">
+                            <button type="submit" class="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75">
+                                Simpan Perubahan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        
+                <!-- Foto Profil -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="relative">
+                        <img src="img/azzam.jpg" alt="Foto Profil" class="w-32 h-32 rounded-full object-cover">
+                        <label for="fotoProfil" class="absolute bottom-0 right-0 bg-indigo-600 text-white p-1 rounded-full cursor-pointer hover:bg-indigo-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232a2.828 2.828 0 010 4l-7 7a2.828 2.828 0 01-4 0l-2-2a2.828 2.828 0 010-4l7-7a2.828 2.828 0 014 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7l-1.5-1.5m0 0L18 4l-1.5-1.5L17 2.5 16.5 2z" />
+                            </svg>
+                        </label>
+                        <input id="fotoProfil" type="file" class="hidden" />
+                    </div>
+                    <p class="text-sm font-medium text-gray-700 mt-2">Edit Foto Profil</p>
+                </div>
+            </div>
+        </div>
+        
+        
+            <footer class="text-center py-4 text-gray-600 mt-8">
+                DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
+            </footer>
+      
+
+  
+
     </body>
 </html>
