@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\KegiatanController;
 
 // Route untuk redirect root ke halaman login
 Route::get('/', function () {
@@ -37,6 +38,11 @@ Route::get('/admin/dev', function () {
     return view('admin.devKit'); // pastikan nama view-nya sesuai
 });
 
+Route::prefix('kegiatan')->group(function () {
+    Route::get('/', [KegiatanController::class, 'index'])->name('kegiatan.list'); // List kegiatan
+    Route::get('/create', [KegiatanController::class, 'create'])->name('kegiatan.create'); // Buat kegiatan
+    Route::get('/evaluasi', [KegiatanController::class, 'evaluasi'])->name('kegiatan.evaluasi'); // Evaluasi kegiatan
+});
 // Route::get('/adminDashboard', function () {
 //     return view('admin.adminDashboard');
 // });
