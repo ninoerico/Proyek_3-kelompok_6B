@@ -4,13 +4,14 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-            Sikahim | Dashboard
+            Sikahim | List kegiatan 
         </title>
-        <!-- Importing Vite CSS -->
+
         @vite('resources/css/app.css')
-        <!-- Importing Flowbite JavaScript -->
+
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     </head>
+
     <body>
         <nav
             class="fixed top-0 z-50 w-full border-b border-gray-200 bg-gray-300 dark:border-gray-700 dark:bg-gray-800"
@@ -45,7 +46,7 @@
                         <a
                             href="https://flowbite.com"
                             class="ms-2 flex md:me-24"
-                        >
+                        > r
                             <img
                                 src="https://flowbite.com/docs/images/logo.svg"
                                 class="me-3 h-8"
@@ -267,7 +268,6 @@
                                     d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"
                                 />
                             </svg>
-
                             <span class="ms-3 flex-1 whitespace-nowrap">
                                 Infaq dan Sodaqoh
                             </span>
@@ -275,6 +275,61 @@
                     </li>
                 </ul>
             </div>
-        </aside>     
+        </aside>
+ 
+        <!-- Konten utama -->
+        <div class="lg:ml-72 mt-24 p-2 sm:p-4 md:p-6 min-h-[calc(100vh-50px)]">
+            <div class="bg-gray-200 rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.25)] h-full">
+                <div class="bg-white p-4 md:p-6 rounded-lg shadow">
+                    <h2 class="text-center text-lg sm:text-xl md:text-2xl mb-4">
+                        Kegiatan <b> Lukmanul Hakim </b> Politeknik Negeri Bandung
+                    </h2>
+            
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm md:text-base">
+                            <thead>
+                                <tr class="border-b border-gray-600">
+                                    <th class="py-2">Nama Kegiatan</th>
+                                    <th class="py-2">Tanggal Pelaksanaan</th>
+                                    <th class="py-2">Jenis Kegiatan</th>
+                                    <th class="py-2">Kuota</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Baris 1 -->
+                                <tr>
+                                    <td class="py-2">
+                                        <a class="text-gray-600" href="#">Kajian Islam dan Teknologi</a>
+                                    </td>
+                                    <td class="py-2">20 September 2024</td>
+                                    <td class="py-2">Kajian</td>
+                                    <td class="py-2">Tanpa batas</td>
+                                </tr>
+                                <!-- Baris 2 -->
+                                <tr>
+                                    <td class="py-2">
+                                        <a class="text-gray-600" href="#">Kajian Islam dan Teknologi</a>
+                                    </td>
+                                    <td class="py-2">20 September 2024</td>
+                                    <td class="py-2">Kajian</td>
+                                    <td class="py-2">Tanpa batas</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="flex items-center justify-between flex-col lg:flex-row gap-4 text-center">
+                <p class="text-gray-600 font-semibold text-xs sm:text-sm md:text-base">DKM - Masjid Lukmanul Hakim POLBAN</p> 
+                <p class="text-gray-600 font-semibold text-xs sm:text-sm md:text-base">B6 - D3 Teknik Informatika POLBAN</p>
+            </div>
+        </footer>
+
     </body>
+
 </html>

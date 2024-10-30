@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-            Sikahim | Dashboard
+            Sikahim | Kegiatan
         </title>
         <!-- Importing Vite CSS -->
         @vite('resources/css/app.css')
@@ -275,6 +275,130 @@
                     </li>
                 </ul>
             </div>
-        </aside>     
+        </aside> 
+
+        <div class="md:ml-64 p-4 mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mb-8">
+          
+              <!-- Kalender -->
+              <div class="bg-white p-4 rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.25)]">
+                <div class="grid grid-cols-7 text-center text-gray-700 font-semibold mb-4 text-xs sm:text-sm md:text-base">
+                  <div>Mg</div>
+                  <div>Sn</div>
+                  <div>Se</div>
+                  <div>Rb</div>
+                  <div>Ka</div>
+                  <div>Ju</div>
+                  <div>Sa</div>
+                </div>
+                <div class="grid grid-cols-7 text-center text-gray-700 text-xs sm:text-sm md:text-base">
+                  <div>1</div>
+                  <div>2</div>
+                  <div>3</div>
+                  <div>4</div>
+                  <div>5</div>
+                  <div>6</div>
+                  <div>7</div>
+                  <div>8</div>
+                  <div>9</div>
+                  <div>10</div>
+                  <div>11</div>
+                  <div>12</div>
+                  <div>13</div>
+                  <div>14</div>
+                  <div class="bg-gray-300 rounded-full w-8 h-8 flex items-center justify-center mx-auto">15</div>
+                  <div class="bg-gray-700 text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto">16</div>
+                  <div>17</div>
+                  <div>18</div>
+                  <div>19</div>
+                  <div>20</div>
+                  <div>21</div>
+                  <div>22</div>
+                  <div>23</div>
+                  <div>24</div>
+                  <div>25</div>
+                  <div>26</div>
+                  <div>27</div>
+                  <div>28</div>
+                  <div>29</div>
+                  <div>30</div>
+                </div>
+              </div>
+              <!-- Status -->
+              <div class="bg-white p-4 rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.25)]">
+                <div class="text-gray-700 font-semibold mb-4 text-xs sm:text-sm md:text-base">Status Seluruh Kegiatan</div>
+                <div class="grid grid-cols-4 text-center text-gray-700">
+                  <div>
+                    <div class="text-2xl sm:text-3xl font-bold">8</div>
+                    <div class="text-xs sm:text-sm">Selesai</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl sm:text-3xl font-bold">2</div>
+                    <div class="text-xs sm:text-sm">Berlangsung</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl sm:text-3xl font-bold">2</div>
+                    <div class="text-xs sm:text-sm">Akan Datang</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl sm:text-3xl font-bold">12</div>
+                    <div class="text-xs sm:text-sm">Total</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Tabel Kegiatan -->
+            <div class="bg-white p-4 rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.25)] mb-8 overflow-x-auto">
+              <div class="text-gray-700 font-semibold mb-4 text-xs sm:text-sm md:text-base">
+                Kegiatan <span class="font-bold">Lukmanul Hakim</span> Politeknik Negeri Bandung
+              </div>
+              <table class="w-full text-left text-xs sm:text-sm md:text-base">
+                <thead>
+                  <tr class="text-gray-700">
+                    <th class="pb-2">Nama Kegiatan</th>
+                    <th class="pb-2">Tanggal Pelaksanaan</th>
+                    <th class="pb-2">Jenis Kegiatan</th>
+                    <th class="pb-2">Kuota</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-gray-600">
+                    <td class="py-2">
+                      <a class="text-gray-600" href="#">Kajian Islam dan Teknologi</a>
+                    </td>
+                    <td class="py-2">20 September 2024</td>
+                    <td class="py-2">Kajian</td>
+                    <td class="py-2">Tanpa batas</td>
+                  </tr>
+                  <tr class="text-gray-600">
+                    <td class="py-2">
+                      <a class="text-gray-600" href="#">Kajian Islam dan Teknologi</a>
+                    </td>
+                    <td class="py-2">20 September 2024</td>
+                    <td class="py-2">Kajian</td>
+                    <td class="py-2">Tanpa batas</td>
+                  </tr>
+                  <tr class="text-gray-600">
+                    <td class="py-2">
+                      <a class="text-gray-600" href="#">Kajian Islam dan Teknologi</a>
+                    </td>
+                    <td class="py-2">20 September 2024</td>
+                    <td class="py-2">Kajian</td>
+                    <td class="py-2">Tanpa batas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          
+            <!-- Footer -->
+            <div class="text-center text-gray-500 text-xs sm:text-sm md:text-base">
+              DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
+            </div>
+          </div>
+          
+
+        </div>
+      
     </body>
 </html>

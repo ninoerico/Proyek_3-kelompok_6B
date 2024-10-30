@@ -21,6 +21,9 @@ Route::get('/admin/adminDashboard', function () {
     return view('admin.adminDashboard');
 })->middleware('auth'); // Pastikan hanya admin yang bisa mengakses
 
+Route::get('/ListKegiatan', function () {
+    return view('ListKegiatan');
+})->name('ListKegiatan');
 
 
 // Route::get('/adminDashboard', function () {
