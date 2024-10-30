@@ -277,89 +277,97 @@
             </div>
         </aside>
 
- <div class="p-4 sm:ml-64 mt-14 sm:mt-20">
-            <div class="p-2 sm:p-4">
-                <!-- Grid Layout for Calendar and Status -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
-                    <!-- Calendar Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="grid grid-cols-7 text-center text-gray-700 font-semibold mb-4 text-sm sm:text-base">
-                            <div>Mg</div>
-                            <div>Sn</div>
-                            <div>Se</div>
-                            <div>Rb</div>
-                            <div>Ka</div>
-                            <div>Ju</div>
-                            <div>Sa</div>
-                        </div>
-                        <div class="grid grid-cols-7 text-center text-gray-700 text-sm sm:text-base">
-                            <!-- Calendar dates with responsive sizing -->
-                            <!-- Days 1-30 remain the same but with responsive classes -->
-                        </div>
-                    </div>
+        <div class="lg:ml-72 mt-16 mr-6  p-6 min-h-[calc(100vh-50px)]">
+    <div class="bg-white rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.25)] h-full">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-14 h-full">
 
-                    <!-- Status Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="text-gray-700 font-semibold mb-4">Status Seluruh Kegiatan</div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-gray-700">
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">8</div>
-                                <div class="text-sm sm:text-base">Selesai</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Berlangsung</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Akan Datang</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">12</div>
-                                <div class="text-sm sm:text-base">Total</div>
-                            </div>
+            <!-- Bagian Kiri - Ukuran Lebih Besar -->
+            <div class="w-full lg:w-4/13 p-4 flex flex-col ml-5 space-y-4">
+            <h2 class=" text-[24px] font-bold mb-4">
+            Evaluasi Kegiatan -  <span class="font-normal">Kajian Islam dan Teknologi (KIT)</span>
+                </h2>
+                <!-- Kotak Input 1 -->
+            <div class="bg-white">
+                <h2 class="text-xl mb-2">Isikan <span class="text-xl font-bold mb-4">Kritik <span class="font-normal">kamu terhadap kegiatan ini</span></span></h2>
+                <!-- Mengganti input dengan textarea -->
+                <textarea id="input1" class="border border-gray-300 border-green-300 rounded-lg w-full p-2" rows="10" placeholder="Masukkan teks di sini..."></textarea>
+            </div>
+
+            <!-- Kotak Input 2 -->
+            <div class="bg-white ">
+                <h2 class="text-xl mb-2">Isikan <span class="text-xl font-bold mb-10">Saran <span class="font-normal">kamu terhadap kegiatan ini</span></span></h2>
+                <!-- Mengganti input dengan textarea -->
+                <textarea id="input2" class="border border-gray-300 border-green-300 rounded-lg mb-16 w-full p-2" rows="10" placeholder="Masukkan teks di sini..."></textarea>
+            </div>
+
+            </div>
+
+            <!-- Bagian Kanan -->
+            <div class="w-full lg:w-4/5 flex flex-col space-y-4">
+                <!-- Kotak Konten Tambahan -->
+                <div class="bg-white mt-16 p-5 rounded-lg shadow-md flex-1">
+                    <h2 class="text-xl mb-1">kamu terhadap kegiatan ini</h2>
+                    <!-- Kotak Rating di dalam Konten Tambahan -->
+                    <div class="bg-white border-2 border-green-300 p-4 rounded-lg mt-4 inline-block">
+                        <div class="flex items-center justify-center space-x-2">
+                            <!-- Bintang -->
+                            <span class="cursor-pointer text-gray-400 text-2xl" data-value="1">★</span>
+                            <span class="cursor-pointer text-gray-400 text-2xl" data-value="2">★</span>
+                            <span class="cursor-pointer text-gray-400 text-2xl" data-value="3">★</span>
+                            <span class="cursor-pointer text-gray-400 text-2xl" data-value="4">★</span>
+                            <span class="cursor-pointer text-gray-400 text-2xl" data-value="5">★</span>
                         </div>
+                        </p>Bagaimanan kegiatannya?</p>
                     </div>
-                </div>
-
-                <!-- Activities Table -->
-                <div class="bg-white p-4 rounded-lg shadow-lg mb-8 overflow-x-auto">
-                    <div class="text-gray-700 font-semibold mb-4">
-                        Kegiatan <span class="font-bold">Lukmanul Hakim</span> Politeknik Negeri Bandung
-                    </div>
-                    <div class="min-w-full overflow-hidden">
-                        <table class="w-full text-left">
-                            <thead>
-                                <tr class="text-gray-700">
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Nama Kegiatan</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Tanggal</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Jenis</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Kuota</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Lokasi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Table rows remain the same but with responsive text -->
-                                <tr class="text-gray-600">
-                                    <td class="py-2 pr-4 text-sm sm:text-base">
-                                        <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
-                                    </td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">20 September 2024</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Kajian</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Tanpa batas</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Masjid Lukmanul Hakim POLBAN</td>
-                                </tr>
-                                <!-- Additional rows... -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="text-center text-gray-500 text-sm sm:text-base">
-                    DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
+                    <p></p>
+                    <div class="flex justify-center mt-96">
+                    <!-- Tombol Submit dengan logo pesan -->
+                    <button id="submit-rating" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-4 px-8 mt-12 rounded-lg shadow-md text-lg flex items-center" disabled>
+                        <!-- Logo Pesan -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89-3.47a2 2 0 011.77 0L21 8m-2 6v6a2 2 0 01-2 2H7a2 2 0 01-2-2v-6m-2 0l8-3.6a2 2 0 012 0l8 3.6M5 10v6m14-6v6" />
+                        </svg>
+                        Kirim Evaluasi
+                    </button>
                 </div>
             </div>
+
+            <script>
+                // Menangani klik bintang
+                const stars = document.querySelectorAll('.cursor-pointer');
+                let ratingValue = 0;
+
+                stars.forEach(star => {
+                    star.addEventListener('click', function() {
+                        ratingValue = this.getAttribute('data-value');
+                        // Update tampilan bintang
+                        stars.forEach(s => {
+                            s.classList.toggle('text-yellow-500', s.getAttribute('data-value') <= ratingValue);
+                            s.classList.toggle('text-gray-400', s.getAttribute('data-value') > ratingValue);
+                        });
+                        // Tampilkan rating
+                        document.getElementById('rating-message').classList.remove('hidden');
+                        document.getElementById('rating-value').innerText = ratingValue;
+                        document.getElementById('submit-rating').disabled = false; // Aktifkan tombol submit
+                    });
+                });
+
+                // Menangani submit rating
+                document.getElementById('submit-rating').addEventListener('click', function() {
+                    alert(`Rating submitted: ${ratingValue}`);
+                    // Di sini, Anda bisa menambahkan logika untuk mengirim rating ke server
+                });
+            </script>
+
         </div>
-    </body>
-</html>
+    </div>
+</div>
+
+<div class="mt-5">
+        <div class="flex items-center justify-between flex-col lg:flex-row">
+            <p class="text-left text-gray-600 font-semibold text-[20px]">DKM - Masjid Lukmanul Hakim POLBAN</p> 
+            <p class="text-right text-gray-600 font-semibold text-[20px]">B6 - D3 Teknik Informatika POLBAN</p>
+        </div>
+    </div>
+
+</div>

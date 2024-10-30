@@ -10,10 +10,9 @@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     </head>
 
-
     <body>
         <nav
-            class="fixed top-0 z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-emerald-200"
+            class="fixed top-0 z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800"
         >
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
                 <div class="flex items-center justify-between">
@@ -129,8 +128,7 @@
             </div>
         </nav>
 
-
-    <aside
+        <aside
             id="logo-sidebar"
             class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full border-r border-gray-200 bg-white pt-20 transition-transform sm:translate-x-0 dark:border-gray-700 dark:bg-gray-800"
             aria-label="Sidebar"
@@ -273,93 +271,64 @@
                             </span>
                         </a>
                     </li>
-                </ul> mr-5
+                </ul>
             </div>
         </aside>
 
- <div class="p-4 sm:ml-64 mt-14 sm:mt-20">
-            <div class="p-2 sm:p-4">
-                <!-- Grid Layout for Calendar and Status -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
-                    <!-- Calendar Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="grid grid-cols-7 text-center text-gray-700 font-semibold mb-4 text-sm sm:text-base">
-                            <div>Mg</div>
-                            <div>Sn</div>
-                            <div>Se</div>
-                            <div>Rb</div>
-                            <div>Ka</div>
-                            <div>Ju</div>
-                            <div>Sa</div>
-                        </div>
-                        <div class="grid grid-cols-7 text-center text-gray-700 text-sm sm:text-base">
-                            <!-- Calendar dates with responsive sizing -->
-                            <!-- Days 1-30 remain the same but with responsive classes -->
-                        </div>
-                    </div>
+        <!-- Konten utama -->
+        <div class="flex-1 p-8 mt-10">
 
-                    <!-- Status Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="text-gray-700 font-semibold mb-4">Status Seluruh Kegiatan</div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-gray-700">
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">8</div>
-                                <div class="text-sm sm:text-base">Selesai</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Berlangsung</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Akan Datang</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">12</div>
-                                <div class="text-sm sm:text-base">Total</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Activities Table -->
-                <div class="bg-white p-4 rounded-lg shadow-lg mb-8 overflow-x-auto">
-                    <div class="text-gray-700 font-semibold mb-4">
-                        Kegiatan <span class="font-bold">Lukmanul Hakim</span> Politeknik Negeri Bandung
-                    </div>
-                    <div class="min-w-full overflow-hidden">
-                        <table class="w-full text-left">
-                            <thead>
-                                <tr class="text-gray-700">
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Nama Kegiatan</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Tanggal</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Jenis</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Kuota</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Lokasi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Table rows remain the same but with responsive text -->
-                                <tr class="text-gray-600">
-                                    <td class="py-2 pr-4 text-sm sm:text-base">
-                                        <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
-                                    </td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">20 September 2024</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Kajian</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Tanpa batas</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Masjid Lukmanul Hakim POLBAN</td>
-                                </tr>
-                                <!-- Additional rows... -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Footer -->
-                <div class="text-center text-gray-500 text-sm sm:text-base">
-                    DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
-                </div>
+            <!-- Tabel Kegiatan -->
+            <div class="bg-white p-6 rounded-lg shadow ">
+                <h2 class="text-center text-xl font-bold mb-4">
+                    Kegiatan <span class="font-normal">Lukmanul Hakim Politeknik Negeri Bandung</span>
+                </h2>
+        
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="py-2">Nama Kegiatan</th>
+                            <th class="py-2">Tanggal Pelaksanaan</th>
+                            <th class="py-2">Jenis Kegiatan</th>
+                            <th class="py-2">Kuota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Baris 1 -->
+                        <tr class="border-b">
+                            <td class="py-2">
+                                <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2">20 September 2024</td>
+                            <td class="py-2">Kajian</td>
+                            <td class="py-2">Tanpa batas</td>
+                        </tr>
+                        <!-- Baris 2 -->
+                        <tr class="border-b">
+                            <td class="py-2">
+                                <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2">20 September 2024</td>
+                            <td class="py-2">Kajian</td>
+                            <td class="py-2">Tanpa batas</td>
+                        </tr>
+                        <!-- Baris 3 -->
+                        <tr class="border-b">
+                            <td class="py-2">
+                                <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2">20 September 2024</td>
+                            <td class="py-2">Kajian</td>
+                            <td class="py-2">Tanpa batas</td>
+                        </tr>
+                        <!-- Tambahkan baris tambahan sesuai kebutuhan -->
+                    </tbody>
+                </table>
             </div>
-        </div>
+
+            <footer class="text-center py-4 text-gray-600 mt-8">
+                DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
+            </footer>
+        </div>        
     </body>
 </html>

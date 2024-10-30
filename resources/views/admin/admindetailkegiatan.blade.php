@@ -273,93 +273,63 @@
                             </span>
                         </a>
                     </li>
-                </ul> mr-5
+                </ul>
             </div>
         </aside>
 
- <div class="p-4 sm:ml-64 mt-14 sm:mt-20">
-            <div class="p-2 sm:p-4">
-                <!-- Grid Layout for Calendar and Status -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
-                    <!-- Calendar Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="grid grid-cols-7 text-center text-gray-700 font-semibold mb-4 text-sm sm:text-base">
-                            <div>Mg</div>
-                            <div>Sn</div>
-                            <div>Se</div>
-                            <div>Rb</div>
-                            <div>Ka</div>
-                            <div>Ju</div>
-                            <div>Sa</div>
-                        </div>
-                        <div class="grid grid-cols-7 text-center text-gray-700 text-sm sm:text-base">
-                            <!-- Calendar dates with responsive sizing -->
-                            <!-- Days 1-30 remain the same but with responsive classes -->
-                        </div>
-                    </div>
 
-                    <!-- Status Card -->
-                    <div class="bg-white p-4 rounded-lg shadow-lg">
-                        <div class="text-gray-700 font-semibold mb-4">Status Seluruh Kegiatan</div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-gray-700">
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">8</div>
-                                <div class="text-sm sm:text-base">Selesai</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Berlangsung</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">2</div>
-                                <div class="text-sm sm:text-base">Akan Datang</div>
-                            </div>
-                            <div class="p-2">
-                                <div class="text-2xl sm:text-3xl font-bold">12</div>
-                                <div class="text-sm sm:text-base">Total</div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="lg:ml-72 mt-20 p-6 min-h-[calc(100vh-50px)]">
+    <div class="bg-gray-200 rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.25)] h-full">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4 h-full">
+            <!-- Bagian Kiri -->
+            <div class="w-full lg:w-1/2 p-4">
+                <h2 class="text-4xl mb-4 font-semibold">Kajian Islam dan Teknologi (KIT)</h2>
+                <p class="mb-4">HIMAKOM - Politeknik Negeri Bandung</p>
+                <p class="mb-4">Jum’at, 20 September 2024 - 08:30 sampai 10:00</p>
+                <p class="mb-4">Tanpa batas kuota peserta</p>
+                <p class="mb-4">
+                    Kajian Islam dan Teknologi (KIT) adalah sebuah upaya untuk memahami dan mengkaji hubungan antara prinsip-prinsip Islam dengan perkembangan teknologi modern. Kajian ini bertujuan untuk menjembatani wawasan keagamaan dan inovasi teknologi, dengan menekankan penerapan nilai-nilai Islam dalam penggunaan, pengembangan, dan dampak teknologi di masyarakat. Melalui KIT, diharapkan muncul solusi yang etis, adil, dan bermanfaat untuk umat manusia sesuai dengan ajaran Islam.
+                </p>
+            </div>
+
+            <!-- Bagian Kanan -->
+            <div class="w-full lg:w-1/2 flex flex-col">
+                <!-- Foto -->
+                <div class="w-full h-85 overflow-hidden rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                    <img src="{{ asset('img/kit2.jpg') }}" alt="Gambar Kit" class="object-cover w-full h-full">
                 </div>
 
-                <!-- Activities Table -->
-                <div class="bg-white p-4 rounded-lg shadow-lg mb-8 overflow-x-auto">
-                    <div class="text-gray-700 font-semibold mb-4">
-                        Kegiatan <span class="font-bold">Lukmanul Hakim</span> Politeknik Negeri Bandung
+                <!-- Informasi dan Tombol 1 -->
+                <div class="mt-3">
+                    <div class="flex items-center space-x-2">
+                        <p class="text-left text-gray-600 mb-2 font-bold">Evaluasi kegiatan</p>
+                        <p class="text-left text-gray-600 mb-2">agar menjadi masukan terhadap panitia</p>
                     </div>
-                    <div class="min-w-full overflow-hidden">
-                        <table class="w-full text-left">
-                            <thead>
-                                <tr class="text-gray-700">
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Nama Kegiatan</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Tanggal</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Jenis</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Kuota</th>
-                                    <th class="pb-2 pr-4 text-sm sm:text-base">Lokasi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Table rows remain the same but with responsive text -->
-                                <tr class="text-gray-600">
-                                    <td class="py-2 pr-4 text-sm sm:text-base">
-                                        <a class="text-blue-500" href="#">Kajian Islam dan Teknologi</a>
-                                    </td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">20 September 2024</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Kajian</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Tanpa batas</td>
-                                    <td class="py-2 pr-4 text-sm sm:text-base">Masjid Lukmanul Hakim POLBAN</td>
-                                </tr>
-                                <!-- Additional rows... -->
-                            </tbody>
-                        </table>
-                    </div>
+                    <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 w-full md:w-auto rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                        Evaluasi Kegiatan
+                    </button>
                 </div>
 
-                <!-- Footer -->
-                <div class="text-center text-gray-500 text-sm sm:text-base">
-                    DKM - Masjid Lukmanul Hakim POLBAN | B6 - D3 Teknik Informatika POLBAN
+                <!-- Informasi dan Tombol 2 -->
+                <div class="mt-3">
+                    <div class="flex items-center space-x-2">
+                        <p class="text-left text-gray-600 mb-2 font-bold">Edit kegiatan </p>
+                        <p class="text-left text-gray-600 mb-2">untuk mengubah detail kegiatan ini</p>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full md:w-auto rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.25)] mb-6">
+                        Edit Kegiatan
+                    </button>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <div class="mt-6">
+        <div class="flex items-center justify-between flex-col lg:flex-row">
+            <p class="text-left text-gray-600 mb-2 font-semibold text-[24px]">DKM - Masjid Lukmanul Hakim POLBAN</p> 
+            <p class="text-right text-gray-600 mb-2 font-semibold text-[24px]">B6 - D3 Teknik Informatika POLBAN</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
