@@ -4,19 +4,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         @vite("resources/css/app.css")
+        <title>SIKAHIM Login</title>
     </head>
     <body>
         <!-- component -->
         <div class="flex h-screen items-center justify-center bg-sky-100">
-            <!-- Left: Image -->
-            <div class="hidden h-screen w-1/2 lg:block">
-                <img
-                    src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-187.jpg?w=826"
-                    alt="Placeholder Image"
-                    class="h-full w-full object-cover"
-                />
-            </div>
-            <!-- Right: Login Form -->
+            <!-- Left: Login Form -->
             <div class="sm:20 w-full p-8 md:p-52 lg:w-1/2 lg:p-36">
                 <h1 class="mb-4 text-center text-2xl font-semibold">
                     Masuk ke SIKAHIM
@@ -24,33 +17,41 @@
                 <form action="{{ route("login") }}" method="POST">
                     @csrf
                     <div class="mb-4 bg-sky-100">
-                        <label for="email" class="block text-gray-600">
+                        <label
+                            for="email"
+                            class="block font-bold text-gray-800"
+                        >
                             Email
                         </label>
                         <input
                             type="email"
                             id="email"
                             name="email"
+                            placeholder="user@example.com"
                             class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-blue-500 focus:outline-none"
                             autocomplete="off"
                             value="{{ old("email") }}"
                         />
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="block text-gray-800">
-                            Password
+                        <label
+                            for="password"
+                            class="block font-bold text-gray-800"
+                        >
+                            Kata Sandi
                         </label>
                         <input
                             type="password"
                             id="password"
                             name="password"
+                            placeholder="Masukkan 6 karakter atau lebih"
                             class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-blue-500 focus:outline-none"
                             autocomplete="off"
                         />
                     </div>
                     <button
                         type="submit"
-                        class="w-full rounded-md bg-red-500 px-4 py-2 font-semibold text-white hover:bg-blue-600"
+                        class="w-full rounded-md bg-green-500 px-4 py-2 font-semibold text-white hover:bg-gray-600"
                     >
                         Login
                     </button>
@@ -67,11 +68,21 @@
 
                 <!-- Sign up  Link -->
                 <div class="text-gray-1000 mt-6 text-center">
-                    <a href="#" class="hover:underline">
+                    <p>
                         Belum punya akun?
-                        <span class="font-bold">Sign Up di sini</span>
-                    </a>
+                        <a href="#" class="font-bold hover:underline">
+                            Sign Up di sini
+                        </a>
+                    </p>
                 </div>
+            </div>
+            <!-- Right: Image -->
+            <div class="hidden h-screen w-1/2 lg:block">
+                <img
+                    src="{{ asset("img/mosque.png") }}"
+                    alt="login image"
+                    class="h-full w-full object-cover"
+                />
             </div>
         </div>
     </body>
