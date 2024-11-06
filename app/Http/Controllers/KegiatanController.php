@@ -10,7 +10,7 @@ class KegiatanController extends Controller
 {
     public function index()
     {
-        $kegiatan = Kegiatan::with('kategori')->get();
+        $kegiatan = Kegiatan::with('kategori')->orderBy('id')->get();
         $kategori = KategoriKegiatan::all();
         return view('admin.listActivity', compact('kegiatan', 'kategori'));
     }
