@@ -32,6 +32,7 @@
                             id="nama_kegiatan"
                             name="nama_kegiatan"
                             class="w-full border p-2"
+                            autocomplete="off"
                             required
                         />
                     </div>
@@ -80,6 +81,7 @@
                             id="lokasi"
                             name="lokasi"
                             class="w-full border p-2"
+                            autocomplete="off"
                             required
                         />
                     </div>
@@ -182,11 +184,7 @@
         >
             <div class="w-1/2 rounded-lg bg-white p-6">
                 <h2 class="mb-4 text-lg font-semibold">Edit Kegiatan</h2>
-                <form
-                    id="editForm"
-                    method="POST"
-                    action="{{ route("kegiatan.update", ["kegiatan" => $item->id]) }}"
-                >
+                <form id="editForm" method="POST">
                     @csrf
                     @method("PUT")
                     <input type="hidden" name="id" id="editId" />
@@ -304,6 +302,11 @@
                     tanggal_selesai;
                 document.getElementById('editLokasi').value = lokasi;
                 document.getElementById('editStatus').value = status;
+
+                document.getElementById('editId').value = id;
+
+                const formAction = `/admin/kegiatan/${id}`;
+                document.getElementById('editForm').action = formAction;
 
                 document.getElementById('editModal').classList.remove('hidden');
             }
