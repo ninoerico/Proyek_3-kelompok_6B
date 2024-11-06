@@ -10,10 +10,8 @@ class KegiatanController extends Controller
 {
     public function index()
     {
-        // Ambil semua data kegiatan dan relasi kategori
         $kegiatan = Kegiatan::with('kategori')->get();
         $kategori = KategoriKegiatan::all();
-        // Tampilkan ke view
         return view('admin.listActivity', compact('kegiatan', 'kategori'));
     }
 
@@ -64,7 +62,7 @@ class KegiatanController extends Controller
 
         $kegiatan->update($request->all());
 
-        return redirect()->route('kegiatan.index')->with('success', 'Kegiatan berhasil diperbarui.');
+        return redirect()->route('kegiatan.index')->with('success', 'Kegiatan berhasil ditambahkan.');
     }
 
     public function destroy($id)
