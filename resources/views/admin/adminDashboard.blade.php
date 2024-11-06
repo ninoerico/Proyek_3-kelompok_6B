@@ -51,39 +51,6 @@
                             </svg>
                         </button>
                     </div>
-                    <div>
-                        <ol class="flex items-center whitespace-nowrap">
-                            <li class="inline-flex items-center">
-                                <a
-                                    class="flex items-center text-sm text-slate-100 hover:text-slate-200 focus:text-slate-200 focus:outline-none"
-                                    href="#"
-                                >
-                                    Home
-                                </a>
-                                <svg
-                                    class="mx-2 size-5 shrink-0 text-slate-200"
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M6 13L10 3"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                    ></path>
-                                </svg>
-                            </li>
-                            <li
-                                class="inline-flex items-center truncate text-sm font-semibold italic text-slate-100"
-                                aria-current="page"
-                            >
-                                Dashbboard
-                            </li>
-                        </ol>
-                    </div>
                     <div class="flex items-center">
                         <div class="ms-3 flex items-center">
                             <div class="flex items-center justify-evenly gap-5">
@@ -91,7 +58,7 @@
                                     <p
                                         class="text-md font-semibold italic text-gray-600"
                                     >
-                                        Bandyaga Adiansyah
+                                        Basgan
                                     </p>
                                     <button
                                         type="button"
@@ -116,13 +83,13 @@
                             >
                                 <div class="px-4 py-3 text-center" role="none">
                                     <p class="text-sm text-white" role="none">
-                                        Bandyaga Adiansyah
+                                        Basgan
                                     </p>
                                     <p
                                         class="truncate text-sm font-medium text-gray-300"
                                         role="none"
                                     >
-                                        aga@gmail.com
+                                        basgan@gmail.com
                                     </p>
                                 </div>
                                 <ul class="py-1 font-semibold" role="none">
