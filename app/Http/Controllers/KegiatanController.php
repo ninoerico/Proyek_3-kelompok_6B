@@ -6,22 +6,23 @@ use Illuminate\Http\Request;
 
 class KegiatanController extends Controller
 {
-    // Menampilkan daftar kegiatan
-    public function index()
+    public function List()
     {
-        // Logika untuk mendapatkan dan menampilkan data kegiatan
-        return view('kegiatan.list'); // Arahkan ke view 'kegiatan.list'
+        return view('kegiatan.list');
     }
 
-    // Menampilkan form untuk membuat kegiatan
     public function create()
     {
-        return view('kegiatan.create'); // Arahkan ke view 'kegiatan.create'
+        return view('kegiatan.create'); // Only for admin
     }
 
-    // Menampilkan halaman evaluasi kegiatan
     public function evaluasi()
     {
-        return view('kegiatan.evaluasi'); // Arahkan ke view 'kegiatan.evaluasi'
+        return view('kegiatan.evaluasi'); // Only for admin
+    }
+
+    public function kritikSaran()
+    {
+        return view('kegiatan.kritikSaran'); // Only for users
     }
 }

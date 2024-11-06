@@ -56,7 +56,7 @@
                             <li class="inline-flex items-center">
                                 <a
                                     class="flex items-center text-sm text-slate-100 hover:text-slate-200 focus:text-slate-200 focus:outline-none"
-                                    href="#"
+                                    href="{{ url('/') }}"
                                 >
                                     Home
                                 </a>
@@ -128,7 +128,7 @@
                                 <ul class="py-1 font-semibold" role="none">
                                     <li>
                                         <a
-                                            href="#"
+                                            href="{{ route('account.manage') }}"
                                             class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 hover:text-white"
                                             role="menuitem"
                                         >
@@ -137,7 +137,7 @@
                                     </li>
                                     <li>
                                         <a
-                                            href="#"
+                                            href="{{ route('logout') }}"
                                             class="block px-4 py-2 text-sm text-red-500 hover:bg-gray-600 hover:text-red-400"
                                             role="menuitem"
                                         >
@@ -158,7 +158,9 @@
             aria-label="Sidebar"
         >
             <div class="h-full overflow-y-auto bg-slate-600 px-3 pb-4">
-                <a href="adminDashboard" class="ms-2 flex pb-10 md:me-24">
+                <a
+                    href="{{ url('/admin/adminDashboard') }}"
+                    class="ms-2 flex pb-10 md:me-24">
                     <img
                         src="https://flowbite.com/docs/images/logo.svg"
                         class="me-3 h-8"
@@ -173,7 +175,7 @@
                 <ul class="space-y-5 font-bold">
                     <li>
                         <a
-                            href="adminDashboard"
+                            href="{{ url('/admin/adminDashboard') }}"
                             class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
@@ -196,7 +198,7 @@
                     </li>
                     <li>
                         <a
-                            href="/calendar"
+                            href="{{ url('/calendar') }}"
                             class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
@@ -219,7 +221,7 @@
                     </li>
                     <li>
                         <a
-                            href="/admin/listActivity"
+                            href="{{ route('kegiatan.create') }}"
                             class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
@@ -242,7 +244,7 @@
                     </li>
                     <li>
                         <a
-                            href="/donate"
+                            href="{{ url('/donate') }}"
                             class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
@@ -284,7 +286,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="{{ route('kegiatan.index') }}">
                                     <button
                                         class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
                                     >
@@ -352,7 +354,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="#" class="">
+                                <a href="{{ route('kegiatan.show', ['id' => $kegiatanId]) }}" class="">
                                     <button
                                         class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
                                     >
@@ -445,7 +447,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="">
+                                <a href="{{ route('kegiatan.show', ['id' => $kegiatanId]) }}" class="">
                                     <button
                                         class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
                                     >
