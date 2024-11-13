@@ -12,26 +12,28 @@ class AuthController extends Controller
 {
     $request->validate([
         'email' => 'required|email',
-        'password' => 'required|string',
+        'password' => 'required|string|min:6',
+    ], [
+        'email.required' => 'Email harus diisi.',
+        'email.email' => 'Format email tidak valid.',
+        'password.required' => 'Password harus diisi.',
+        'password.min' => 'Password harus terdiri dari minimal :min karakter.',
     ]);
 
     $credentials = $request->only('email', 'password');
 
     if (Auth::attempt($credentials)) {
-        // Jika login berhasil
         $request->session()->regenerate();
 
-        // Redirect ke dashboard admin jika role adalah admin
         if (Auth::user()->role === 'admin') {
             return redirect()->intended('/admin/adminDashboard');
         } else {
-            return redirect()->intended('/user/userDashhboard');
+            return redirect()->intended('/user/userDashboard');
         }
     }
 
-    // Jika login gagal
     return back()->withErrors([
-        'email' => 'Login gagal. Coba lagi.',
+        'email' => 'Email tidak terdaftar atau Kata Sandi salah.',
     ]);
 }
 
