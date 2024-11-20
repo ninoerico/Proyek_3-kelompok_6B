@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-            Sikahim | Users Kegiatan
+            Sikahim | List Evaluasi 
         </title>
         <!-- Importing Vite CSS -->
         @vite('resources/css/app.css')
@@ -273,105 +273,94 @@
         </aside>     
         </aside>
 
-        <div class="md:ml-64 p-4 mt-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mb-8">
-          
-              <!-- Kalender -->
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <div class="grid grid-cols-7 text-center text-gray-500 font-semibold mb-4 text-xs sm:text-sm md:text-base">
-                  <div>Mg</div>
-                  <div>Sn</div>
-                  <div>Se</div>
-                  <div>Rb</div>
-                  <div>Ka</div>
-                  <div>Ju</div>
-                  <div>Sa</div>
-                </div>
-                <div class="grid grid-cols-7 text-center text-gray-500 text-xs sm:text-sm md:text-base">
-                  <div>1</div>
-                  <div>2</div>
-
-              </div>
-              <!-- Status -->
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <div class="text-gray-500 font-semibold mb-4 text-xs sm:text-sm md:text-base">Status Seluruh Kegiatan</div>
-                <div class="grid grid-cols-4 text-center text-gray-500">
-                  <div>
-                    <div class="text-2xl sm:text-3xl font-bold">8</div>
-                    <div class="text-xs sm:text-sm">Selesai</div>
-                  </div>
-                  <div>
-                    <div class="text-2xl sm:text-3xl font-bold">2</div>
-                    <div class="text-xs sm:text-sm">Berlangsung</div>
-                  </div>
-                  <div>
-                    <div class="text-2xl sm:text-3xl font-bold">2</div>
-                    <div class="text-xs sm:text-sm">Akan Datang</div>
-                  </div>
-                  <div>
-                    <div class="text-2xl sm:text-3xl font-bold">12</div>
-                    <div class="text-xs sm:text-sm">Total</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
+        <div class="flex-1 mb-8 md:ml-7 md:mr-7 p-4 mt-10 overflow-x-auto text-gray-500">
             <!-- Tabel Kegiatan -->
-            <div class="bg-white p-4 rounded-lg shadow-md mb-8 overflow-x-auto">
-              <div class="text-gray-500 font-semibold mb-4 text-xs sm:text-sm md:text-base">
-                Kegiatan <span class="font-bold">Lukmanul Hakim</span> Politeknik Negeri Bandung
-              </div>
-              <table class="w-full text-left text-xs sm:text-sm md:text-base">
-                <thead>
-                  <tr class="text-gray-500">
-                    <th class="pb-2">Nama Kegiatan</th>
-                    <th class="pb-2">Tanggal Pelaksanaan</th>
-                    <th class="pb-2">Jenis Kegiatan</th>
-                    <th class="pb-2">Kuota</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="text-gray-500">
-                    <td class="py-2">
-                      <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
-                    </td>
-                    <td class="py-2">20 September 2024</td>
-                    <td class="py-2">Kajian</td>
-                    <td class="py-2">Tanpa batas</td>
-                  </tr>
-                  <tr class="text-gray-500">
-                    <td class="py-2">
-                      <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
-                    </td>
-                    <td class="py-2">20 September 2024</td>
-                    <td class="py-2">Kajian</td>
-                    <td class="py-2">Tanpa batas</td>
-                  </tr>
-                  <tr class="text-gray-500">
-                    <td class="py-2">
-                      <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
-                    </td>
-                    <td class="py-2">20 September 2024</td>
-                    <td class="py-2">Kajian</td>
-                    <td class="py-2">Tanpa batas</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="bg-white p-8 mt-10 md:ml-64 rounded-2xl shadow-md">
+                <h2 class="text-center text-xl font-bold mb-4">
+                    Kegiatan <span class="font-normal">Lukmanul Hakim Politeknik Negeri Bandung</span>
+                </h2>
+        
+                <table class="min-w-full text-left">
+                    <thead>
+                        <tr class="border-b-2 border-gray-500">
+                            <th class="py-2 px-4">Nama Kegiatan</th>
+                            <th class="py-2 px-4">Tanggal Pelaksanaan</th>
+                            <th class="py-2 px-4">Jenis Kegiatan</th>
+                            <th class="py-2 px-4">Kuota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Baris 1 -->
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <!-- Baris 2 -->
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <!-- Baris 3 -->
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4">
+                                <a class="text-gray-500" href="#">Kajian Islam dan Teknologi</a>
+                            </td>
+                            <td class="py-2 px-4">20 September 2024</td>
+                            <td class="py-2 px-4">Kajian</td>
+                            <td class="py-2 px-4">Tanpa batas</td>
+                        </tr>
+                        <!-- Tambahkan baris sesuai kebutuhan -->
+                    </tbody>
+                </table>
             </div>
-          
-            <!-- Footer -->
-            <div
-            class="grid grid-cols-1 justify-between gap-4 sm:grid-cols-2"
-        >
-            <p class="flex justify-self-start font-bold text-gray-500">
-                B6 - D3 Teknik Informatika
-            </p>
-            <p class="flex justify-self-end font-bold text-gray-500">
-                DKM Lukmanul Hakim
-            </p>
-
+        
+            <!-- Info Footer -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                <p class="justify-self-start font-bold">B6 - D3 Teknik Informatika</p>
+                <p class="justify-self-end font-bold">DKM Lukmanul Hakim</p>
+            </div>
         </div>
-        </div>
-      
+        
+               
     </body>
 </html>

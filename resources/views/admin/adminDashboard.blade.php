@@ -10,22 +10,32 @@
         @vite('resources/css/app.css')
         <!-- Importing Flowbite JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+        <style>
+            .bg {
+                background-color: #93b5b3;
+            }
+
+            .bg-btn {
+                background-color: #93b5b3;
+                transition: background-color 0.3s ease;
+            }
+
+            .bg-btn:hover {
+                background-color: #78a1a1;
+            }
+        </style>
     </head>
-    <body>
-        <nav
-            class="fixed top-0 z-50 w-full border-b border-gray-200 bg-gray-300 dark:border-gray-700 dark:bg-gray-800"
-        >
+    <body class="bg-gray-200">
+        <nav class="bg fixed top-0 z-30 w-full shadow-md">
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
                 <div class="flex items-center justify-between">
-                    <div
-                        class="flex items-center justify-start rtl:justify-end"
-                    >
+                    <div class="flex items-center">
                         <button
                             data-drawer-target="logo-sidebar"
                             data-drawer-toggle="logo-sidebar"
                             aria-controls="logo-sidebar"
                             type="button"
-                            class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 sm:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            class="inline-flex items-center rounded-lg p-2 text-sm text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 lg:hidden"
                         >
                             <span class="sr-only">Open sidebar</span>
                             <svg
@@ -42,71 +52,86 @@
                                 ></path>
                             </svg>
                         </button>
-                        <a
-                            href="https://flowbite.com"
-                            class="ms-2 flex md:me-24"
-                        >
-                            <img
-                                src="https://flowbite.com/docs/images/logo.svg"
-                                class="me-3 h-8"
-                                alt="FlowBite Logo"
-                            />
-                            <span
-                                class="self-center whitespace-nowrap text-xl font-semibold sm:text-2xl dark:text-white"
+                    </div>
+                    <div>
+                        <ol class="flex items-center whitespace-nowrap">
+                            <li class="inline-flex items-center">
+                                <a
+                                    class="flex items-center text-sm text-slate-100 hover:text-slate-200 focus:text-slate-200 focus:outline-none"
+                                    href="#"
+                                >
+                                    Home
+                                </a>
+                                <svg
+                                    class="mx-2 size-5 shrink-0 text-slate-200"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M6 13L10 3"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                    ></path>
+                                </svg>
+                            </li>
+                            <li
+                                class="inline-flex items-center truncate text-sm font-semibold italic text-slate-100"
+                                aria-current="page"
                             >
-                                SIKAHIM
-                            </span>
-                        </a>
+                                Dashbboard
+                            </li>
+                        </ol>
                     </div>
                     <div class="flex items-center">
                         <div class="ms-3 flex items-center">
-                            <div>
-                                <button
-                                    type="button"
-                                    class="flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-                                    aria-expanded="false"
-                                    data-dropdown-toggle="dropdown-user"
-                                >
-                                    <span class="sr-only">Open user menu</span>
-                                    <img
-                                        class="h-8 w-8 rounded-full"
-                                        src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                        alt="user photo"
-                                    />
-                                </button>
-                            </div>
-                            <div
-                                class="z-50 my-4 hidden list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700"
-                                id="dropdown-user"
-                            >
-                                <div class="px-4 py-3" role="none">
+                            <div class="flex items-center justify-evenly gap-5">
+                                <div class="flex items-center gap-3">
                                     <p
-                                        class="text-sm text-gray-900 dark:text-white"
-                                        role="none"
+                                        class="text-md font-semibold italic text-gray-600"
                                     >
                                         Bandyaga Adiansyah
                                     </p>
+                                    <button
+                                        type="button"
+                                        class="flex rounded-full bg-gray-500 text-sm focus:ring-2 focus:ring-gray-500"
+                                        aria-expanded="false"
+                                        data-dropdown-toggle="dropdown-user"
+                                    >
+                                        <span class="sr-only">
+                                            Open user menu
+                                        </span>
+                                        <img
+                                            class="h-8 w-8 rounded-full"
+                                            src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                            alt="user photo"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="z-50 my-10 hidden list-none divide-y divide-gray-600 rounded bg-gray-700 text-base shadow"
+                                id="dropdown-user"
+                            >
+                                <div class="px-4 py-3 text-center" role="none">
+                                    <p class="text-sm text-white" role="none">
+                                        Bandyaga Adiansyah
+                                    </p>
                                     <p
-                                        class="truncate text-sm font-medium text-gray-900 dark:text-gray-300"
+                                        class="truncate text-sm font-medium text-gray-300"
                                         role="none"
                                     >
-                                        bandyagaadiansyah@gmail.com
+                                        aga@gmail.com
                                     </p>
                                 </div>
-                                <ul class="py-1" role="none">
+                                <ul class="py-1 font-semibold" role="none">
                                     <li>
                                         <a
                                             href="#"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            role="menuitem"
-                                        >
-                                            Lihat Aktivitas
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                            class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 hover:text-white"
                                             role="menuitem"
                                         >
                                             Kelola Akun
@@ -115,7 +140,7 @@
                                     <li>
                                         <a
                                             href="#"
-                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                            class="block px-4 py-2 text-sm text-red-500 hover:bg-gray-600 hover:text-red-400"
                                             role="menuitem"
                                         >
                                             Sign out
@@ -131,49 +156,62 @@
 
         <aside
             id="logo-sidebar"
-            class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full border-r border-gray-200 bg-white pt-20 transition-transform sm:translate-x-0 dark:border-gray-700 dark:bg-gray-800"
+            class="bg-teal fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full pt-10 transition-transform sm:translate-x-0 dark:bg-slate-600"
             aria-label="Sidebar"
         >
-            <div
-                class="h-full overflow-y-auto bg-white px-3 pb-4 dark:bg-gray-800"
-            >
-                <ul class="space-y-2 font-medium">
+            <div class="h-full overflow-y-auto bg-slate-600 px-3 pb-4">
+                <a href="adminDashboard" class="ms-2 flex pb-10 md:me-24">
+                    <img
+                        src="https://flowbite.com/docs/images/logo.svg"
+                        class="me-3 h-8"
+                        alt="FlowBite Logo"
+                    />
+                    <span
+                        class="self-center whitespace-nowrap text-xl font-bold sm:text-2xl dark:text-white"
+                    >
+                        SIKAHIM
+                    </span>
+                </a>
+                <ul class="space-y-5 font-bold">
                     <li>
                         <a
-                            href="#"
-                            class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            href="adminDashboard"
+                            class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
-                                class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                class="h-5 w-5 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-white"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
-                                viewBox="0 0 22 21"
+                                viewBox="0 0 24 24"
                             >
                                 <path
-                                    d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"
-                                />
-                                <path
-                                    d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
+                                    fill-rule="evenodd"
+                                    d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                                    clip-rule="evenodd"
                                 />
                             </svg>
-                            <span class="ms-3">Dashboard</span>
+                            <span class="ms-3 flex-1 whitespace-nowrap">
+                                Dashboard
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a
-                            href="#"
-                            class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            href="/calendar"
+                            class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
-                                class="h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                                class="h-5 w-5 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-white"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
-                                viewBox="0 0 20 18"
+                                viewBox="0 0 24 24"
                             >
                                 <path
-                                    d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                                    fill-rule="evenodd"
+                                    d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                                    clip-rule="evenodd"
                                 />
                             </svg>
                             <span class="ms-3 flex-1 whitespace-nowrap">
@@ -182,89 +220,46 @@
                         </a>
                     </li>
                     <li>
-                        <button
-                            type="button"
-                            class="group flex w-full items-center rounded-lg p-2 text-base text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                            aria-controls="dropdown-example"
-                            data-collapse-toggle="dropdown-example"
+                        <a
+                            href="/admin/listActivity"
+                            class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
                                 class="h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
-                                viewBox="0 0 18 21"
+                                viewBox="0 0 24 24"
                             >
                                 <path
-                                    d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+                                    fill-rule="evenodd"
+                                    d="M8 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1h2a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2Zm6 1h-4v2H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-1V4Zm-3 8a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H9Zm2 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H9Z"
+                                    clip-rule="evenodd"
                                 />
                             </svg>
-                            <span
-                                class="ms-3 flex-1 whitespace-nowrap text-left rtl:text-right"
-                            >
+                            <span class="ms-3 flex-1 whitespace-nowrap">
                                 Kegiatan
                             </span>
-                            <svg
-                                class="h-3 w-3"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 10 6"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="m1 1 4 4 4-4"
-                                />
-                            </svg>
-                        </button>
-                        <ul id="dropdown-example" class="hidden space-y-2 py-2">
-                            <li>
-                                <a
-                                    href="#"
-                                    class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    List Kegiatan
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    Buat Kegiatan
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    Evaluasi Kegiatan
-                                </a>
-                            </li>
-                        </ul>
+                        </a>
                     </li>
                     <li>
                         <a
-                            href="#"
-                            class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            href="/donate"
+                            class="group flex items-center rounded-lg p-2 text-white hover:bg-gray-700"
                         >
                             <svg
                                 class="h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
-                                viewBox="0 0 18 16"
+                                viewBox="0 0 24 24"
                             >
                                 <path
                                     stroke="currentColor"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"
+                                    stroke-width="3"
+                                    d="M8 17.345a4.76 4.76 0 0 0 2.558 1.618c2.274.589 4.512-.446 4.999-2.31.487-1.866-1.273-3.9-3.546-4.49-2.273-.59-4.034-2.623-3.547-4.488.486-1.865 2.724-2.899 4.998-2.31.982.236 1.87.793 2.538 1.592m-3.879 12.171V21m0-18v2.2"
                                 />
                             </svg>
 
@@ -276,5 +271,218 @@
                 </ul>
             </div>
         </aside>     
+        </aside>
+
+        <section class="p-3 sm:ml-64">
+            <div class="mt-14 rounded-lg border-gray-700 p-3">
+                <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                    <div
+                        class="col-span-1 grid h-48 grid-cols-2 items-start justify-start rounded-2xl bg-white shadow-md"
+                    >
+                        <div class="flex h-48 flex-col justify-between p-5">
+                            <div>
+                                <p class="mb-2 text-xl text-gray-500">
+                                    Halo,
+                                    <br />
+                                    <span class="font-bold">Bandyaga</span>
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <button
+                                        class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
+                                    >
+                                        Lihat Kegiatan
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex h-48 items-start justify-start">
+                            <img
+                                src="{{ asset("img/cuate.png") }}"
+                                alt="kit"
+                                class="h-48 w-full object-cover p-5"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-2 grid h-48 grid-cols-2 items-start justify-start rounded-2xl bg-white shadow-md"
+                    >
+                        <div class="flex h-48 flex-col justify-between p-5">
+                            <div>
+                                <h1
+                                    class="mb-2 text-xl font-bold text-gray-500"
+                                >
+                                    Mentoring Karakter Berbasis Agama (METAGAMA)
+                                </h1>
+                                <div class="flex">
+                                    <svg
+                                        class="h-5 w-5 text-gray-500"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    <p class="mb-1 ms-2 text-sm text-gray-500">
+                                        METAGAMA Politeknik Negeri Bandung
+                                    </p>
+                                </div>
+                                <div class="flex">
+                                    <svg
+                                        class="h-5 w-5 text-gray-500"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+
+                                    <p class="mb-1 ms-2 text-sm text-gray-500">
+                                        Sabtu, 2 November 2024
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="">
+                                    <button
+                                        class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
+                                    >
+                                        Detail Kegiatan
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex h-48 items-start justify-start">
+                            <img
+                                src="{{ asset("img/kit.jpg") }}"
+                                alt="kit"
+                                class="h-48 w-full rounded-r-xl object-cover"
+                            />
+                            <div
+                                class="bg absolute px-6 py-1 font-bold text-white"
+                            >
+                                Akan Datang
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                    <div
+                        class="col-span-1 flex h-72 items-start justify-start rounded-2xl bg-white shadow-md"
+                    >
+                        <p class="m-5 text-xl text-gray-500">
+                            Senin,
+                            <span class="font-bold">23 Oktober 2024</span>
+                        </p>
+                    </div>
+                    <div
+                        class="col-span-2 grid h-72 grid-cols-2 items-start rounded-2xl bg-white shadow-md"
+                    >
+                        <div class="flex h-72 flex-col justify-between p-5">
+                            <div>
+                                <h1
+                                    class="mb-2 text-xl font-bold text-gray-500"
+                                >
+                                    Kajian Islam dan Teknologi (KIT)
+                                </h1>
+                                <div class="flex">
+                                    <svg
+                                        class="h-5 w-5 text-gray-500"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    <p class="mb-1 ms-2 text-sm text-gray-500">
+                                        HIMAKOM Politeknik Negeri Bandung
+                                    </p>
+                                </div>
+                                <div class="flex">
+                                    <svg
+                                        class="h-5 w-5 text-gray-500"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+
+                                    <p class="mb-1 ms-2 text-sm text-gray-500">
+                                        Jum'at, 25 Oktober 2024
+                                    </p>
+                                </div>
+                                <p
+                                    class="mb-1 max-h-28 overflow-auto text-sm text-gray-500"
+                                >
+                                    Kajian Islam dan Teknologi (KIT) adalah
+                                    studi tentang hubungan antara ajaran Islam
+                                    dan teknologi. Ini membahas bagaimana
+                                    teknologi bisa digunakan untuk kebaikan umat
+                                    Islam dan bagaimana nilai-nilai Islam
+                                    mempengaruhi penggunaannya.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#" class="">
+                                    <button
+                                        class="bg-btn rounded-3xl px-5 py-1 font-bold text-white"
+                                    >
+                                        Detail Kegiatan
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex h-72 items-start justify-start">
+                            <img
+                                src="{{ asset("img/kit.jpg") }}"
+                                alt="kit"
+                                class="h-72 w-full rounded-r-xl object-cover"
+                            />
+                            <div
+                                class="bg absolute px-6 py-1 font-bold text-white"
+                            >
+                                Berlangsung
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-1 justify-between gap-4 sm:grid-cols-2"
+                >
+                    <p class="flex justify-self-start font-bold text-gray-500">
+                        B6 - D3 Teknik Informatika
+                    </p>
+                    <p class="flex justify-self-end font-bold text-gray-500">
+                        DKM Lukmanul Hakim
+                    </p>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

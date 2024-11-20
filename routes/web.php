@@ -21,10 +21,21 @@ Route::get('/admin/adminDashboard', function () {
     return view('admin.adminDashboard');
 })->middleware('auth'); // Pastikan hanya admin yang bisa mengakses
 
-Route::get('/ListKegiatan', function () {
-    return view('ListKegiatan');
-})->name('ListKegiatan');
+Route::get('/calendar', function () {
+    return view('calendar'); // pastikan nama view-nya sesuai
+});
 
+Route::get('/admin/listActivity', function () {
+    return view('admin.listActivity'); // pastikan nama view-nya sesuai
+});
+
+Route::get('/donate', function () {
+    return view('donate'); // pastikan nama view-nya sesuai
+});
+
+Route::get('/admin/dev', function () {
+    return view('admin.devKit'); // pastikan nama view-nya sesuai
+});
 
 // Route::get('/adminDashboard', function () {
 //     return view('admin.adminDashboard');
