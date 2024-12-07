@@ -18,6 +18,13 @@ Route::get('/admin/adminDashboard', function () {
     return view('admin.adminDashboard');
 })->middleware('auth');
 
+
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+// Route::get('/adminDashboard', function () {
+//     return view('admin.adminDashboard');
+// });
 Route::get('/calendar', function () {
     return view('calendar');
 });
